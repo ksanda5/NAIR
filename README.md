@@ -1,6 +1,9 @@
 # NAIR - Wildfire Detection and Visualization using Sentinel Hub
 
 This project interacts with Sentinel Hub services to retrieve and visualize satellite imagery data, specifically focusing on detecting and visualizing wildfires.
+<pre>
+    
+</pre>
 [Fully Rendered JupytherNotebook: https://nbviewer.org/github/ksanda5/NAIR/blob/main/WildfireIdentification.ipynb]
 ## Key Components
 
