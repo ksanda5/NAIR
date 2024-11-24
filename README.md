@@ -13,6 +13,20 @@ https://github.com/user-attachments/assets/d18cb62e-ec52-4f75-877e-e7a360176ddb
 ![Screenshot from 2024-11-24 15-57-33](https://github.com/user-attachments/assets/63cfb33b-adb5-4b64-bf42-27776c38a6ad)
 ![Screenshot from 2024-11-24 15-58-10](https://github.com/user-attachments/assets/ee072c91-84b7-46a9-a539-ab791d476fdc)
 
+# The problem
+
+Europe is currently facing an increasingly complex set of security challenges that significantly threaten public safety and societal stability. Among these, the escalating frequency and intensity of wildfires have emerged as particularly urgent issues. These catastrophic events pose immediate dangers to lives and property while also inflicting profound and lasting impacts on the economy, environment, and cultural heritage. 
+
+In recent years, wildfires have become alarmingly prevalent, with 2023 marking one of the most devastating seasons in Europe’s history. Reports indicate that over 504,000 hectares were scorched across the continent, making it one of the worst years for wildfires since the turn of the millennium. The economic losses attributed to wildfires in 2023 alone exceeded €2.5 billion, underscoring the severe financial repercussions on affected communities. This devastation has resulted in significant population displacement and irreversible damage to ecosystems. 
+
+The trend of increasing wildfire incidents shows no signs of abating. Factors such as climate change, inadequate land management practices, and urban expansion contribute to a landscape that is increasingly vulnerable to these disasters. The initial phase of a wildfire crisis is critical for effective response efforts; swift action is essential to mitigate damage and protect lives. However, traditional monitoring and response methods often fall short in providing timely and accurate information about the extent of the threat. Emergency services frequently operate with limited situational awareness, hindering their ability to make informed decisions quickly. 
+
+Moreover, a significant challenge lies in the reliance on single-source connectivity for communication between drones and control stations. This dependence on satellite-based networking or GPS communication can create bottlenecks that delay information exchange and impede prompt communication with emergency service command centers. To address these multifaceted challenges, there is an urgent need for innovative solutions that facilitate rapid detection and assessment of wildfires in real time. Effective monitoring systems must integrate advanced technologies capable of gathering comprehensive data about impacted areas, enabling emergency responders to act decisively during critical moments. 
+
+# The solution
+
+Our proposed solution harnesses the capabilities of unmanned aerial vehicles (UAVs) and mid-sized drones combined with geospatial intelligence to bridge this gap. By implementing a self-sustainable networking solution among drone fleets, we aim to overcome communication challenges and enhance the effectiveness of wildfire monitoring and response efforts across Europe.
+
 
 ## Key Components
 
@@ -63,20 +77,6 @@ request_wildfire_visualisation = SentinelHubRequest(
 # Execute the request to retrieve the wildfire visualization images
 imgs = request_wildfire_visualisation.get_data()
 ```
-
-## The problem
-
-Europe is currently facing an increasingly complex set of security challenges that significantly threaten public safety and societal stability. Among these, the escalating frequency and intensity of wildfires have emerged as particularly urgent issues. These catastrophic events pose immediate dangers to lives and property while also inflicting profound and lasting impacts on the economy, environment, and cultural heritage. 
-
-In recent years, wildfires have become alarmingly prevalent, with 2023 marking one of the most devastating seasons in Europe’s history. Reports indicate that over 504,000 hectares were scorched across the continent, making it one of the worst years for wildfires since the turn of the millennium. The economic losses attributed to wildfires in 2023 alone exceeded €2.5 billion, underscoring the severe financial repercussions on affected communities. This devastation has resulted in significant population displacement and irreversible damage to ecosystems. 
-
-The trend of increasing wildfire incidents shows no signs of abating. Factors such as climate change, inadequate land management practices, and urban expansion contribute to a landscape that is increasingly vulnerable to these disasters. The initial phase of a wildfire crisis is critical for effective response efforts; swift action is essential to mitigate damage and protect lives. However, traditional monitoring and response methods often fall short in providing timely and accurate information about the extent of the threat. Emergency services frequently operate with limited situational awareness, hindering their ability to make informed decisions quickly. 
-
-Moreover, a significant challenge lies in the reliance on single-source connectivity for communication between drones and control stations. This dependence on satellite-based networking or GPS communication can create bottlenecks that delay information exchange and impede prompt communication with emergency service command centers. To address these multifaceted challenges, there is an urgent need for innovative solutions that facilitate rapid detection and assessment of wildfires in real time. Effective monitoring systems must integrate advanced technologies capable of gathering comprehensive data about impacted areas, enabling emergency responders to act decisively during critical moments. 
-
-## The solution
-
-Our proposed solution harnesses the capabilities of unmanned aerial vehicles (UAVs) and mid-sized drones combined with geospatial intelligence to bridge this gap. By implementing a self-sustainable networking solution among drone fleets, we aim to overcome communication challenges and enhance the effectiveness of wildfire monitoring and response efforts across Europe.
 
 ## Satellite Imagery for Initial Assessment
 
