@@ -52,7 +52,8 @@ request_wildfire_visualisation = SentinelHubRequest(
 # Execute the request to retrieve the wildfire visualization images
 imgs = request_wildfire_visualisation.get_data()
 ```
-The problem
+
+##The problem
 
 Europe is currently facing an increasingly complex set of security challenges that significantly threaten public safety and societal stability. Among these, the escalating frequency and intensity of wildfires have emerged as particularly urgent issues. These catastrophic events pose immediate dangers to lives and property while also inflicting profound and lasting impacts on the economy, environment, and cultural heritage. 
 
@@ -62,27 +63,27 @@ The trend of increasing wildfire incidents shows no signs of abating. Factors su
 
 Moreover, a significant challenge lies in the reliance on single-source connectivity for communication between drones and control stations. This dependence on satellite-based networking or GPS communication can create bottlenecks that delay information exchange and impede prompt communication with emergency service command centers. To address these multifaceted challenges, there is an urgent need for innovative solutions that facilitate rapid detection and assessment of wildfires in real time. Effective monitoring systems must integrate advanced technologies capable of gathering comprehensive data about impacted areas, enabling emergency responders to act decisively during critical moments. 
 
-The solution
+##The solution
 
 Our proposed solution harnesses the capabilities of unmanned aerial vehicles (UAVs) and mid-sized drones combined with geospatial intelligence to bridge this gap. By implementing a self-sustainable networking solution among drone fleets, we aim to overcome communication challenges and enhance the effectiveness of wildfire monitoring and response efforts across Europe.
 
-Satellite Imagery for Initial Assessment
+##Satellite Imagery for Initial Assessment
 
 Utilizing images from the SENTINEL-2 satellite, we can accurately identify affected areas and extract initial coordinates of wildfire events. This satellite data is crucial for understanding the extent of the threat and initiating timely responses. Leveraging our proprietary technology, we deploy a fleet of drones—ranging from Tactical UAVs to quadcopters—to gather detailed information about the hazard. This process involves delineating the impacted zone and automatically coordinating the drone swarm to enhance our understanding of the area.
 
-Advanced Onboard Sensors and Smart Agents
+##Advanced Onboard Sensors and Smart Agents
 
 Each drone is equipped with advanced onboard sensors that work in conjunction with smart agents. These technologies enable the drones to identify critical infrastructure such as buildings and people, as well as monitor environmental conditions to assess and forecast further developments of the wildfire. This capability allows for real-time data collection that informs emergency responders about evolving threats.
 
-Customization and Contextual Adaptation
+##Customization and Contextual Adaptation
 
 Our technology allows agents to be customized according to specific scenarios, adapting based on available information from the environment, the nature of the emergency, and the connectivity status among drones in the fleet. This adaptability facilitates the exchange of contextual knowledge through a Distributed Reinforcement Learning model designed for embedded devices. As a result, we can identify and prioritize critical Points of Interest (POIs), providing granular information that leads to a deeper understanding of the affected zone. The agents perform asymmetrical sensor fusion, integrating data from individual units to create a comprehensive overview of the situation.
 
-Robust Communication Framework
+##Robust Communication Framework
 
 The adaptive drone swarm features a robust communication framework among the fleet. By utilizing Low-Power Wide-Area Network (LoRaWAN) and long-distance Wi-Fi technology, our system eliminates reliance on a single point of failure. This architecture ensures full autonomy and redundancy through unsupervised coordination, establishing a resilient communication bridge capable of withstanding disruptions in satellite communication. This capability is essential for maintaining connectivity over long distances and in hostile environmental conditions that may impede communication between the fleet and the Control Ground Station (CGS).
 
-Use of EU Space Technologies
+##Use of EU Space Technologies
 
 Sentinel-2 is designed to capture multi-spectral imagery across 13 spectral bands, ranging from visible light to shortwave infrared. The spatial resolutions of these bands vary, with four bands at 10 meters, six bands at 20 meters, and three bands at 60 meters. This configuration enables detailed observations of vegetation, soil, water bodies, and coastal areas across a wide swath width of 290 kilometers. 
 
