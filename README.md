@@ -3,6 +3,23 @@
 This project interacts with Sentinel Hub services to retrieve and visualize satellite imagery data, specifically focusing on detecting and visualizing wildfires.
 
 [Fully Rendered JupytherNotebook: https://nbviewer.org/github/ksanda5/NAIR/blob/main/WildfireIdentification.ipynb]
+
+
+
+
+https://github.com/user-attachments/assets/b87d9a51-ec5c-4149-9ad2-49c9ce9c77bb
+
+
+
+https://github.com/user-attachments/assets/d18cb62e-ec52-4f75-877e-e7a360176ddb
+
+
+![Screenshot from 2024-11-24 15-56-07](https://github.com/user-attachments/assets/baf677c2-6c1c-486c-a7ce-e295d676d5d2)
+![fire](https://github.com/user-attachments/assets/4ef80f4a-06f0-4741-ae4a-18fa33926499)
+![Screenshot from 2024-11-24 15-57-33](https://github.com/user-attachments/assets/63cfb33b-adb5-4b64-bf42-27776c38a6ad)
+![Screenshot from 2024-11-24 15-58-10](https://github.com/user-attachments/assets/ee072c91-84b7-46a9-a539-ab791d476fdc)
+
+
 ## Key Components
 
 ### 1. Configuration Setup
