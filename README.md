@@ -5,12 +5,6 @@ This project interacts with Sentinel Hub services to retrieve and visualize sate
 [Fully Rendered JupytherNotebook: https://nbviewer.org/github/ksanda5/NAIR/blob/main/WildfireIdentification.ipynb]
 
 
-
-
-https://github.com/user-attachments/assets/b87d9a51-ec5c-4149-9ad2-49c9ce9c77bb
-
-
-
 https://github.com/user-attachments/assets/d18cb62e-ec52-4f75-877e-e7a360176ddb
 
 
