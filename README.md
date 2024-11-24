@@ -1,5 +1,63 @@
-# NAIR
+# NAIR - Wildfire Detection and Visualization using Sentinel Hub
 
+This project interacts with Sentinel Hub services to retrieve and visualize satellite imagery data, specifically focusing on detecting and visualizing wildfires.
+
+## Key Components
+
+### 1. Importing Libraries
+Essential libraries for handling geospatial data, plotting, numerical operations, and interacting with Sentinel Hub services are imported:
+- `geopandas` for geospatial data manipulation
+- `matplotlib` for plotting
+- `numpy` for numerical operations
+- `sentinelhub` for interacting with Sentinel Hub services
+
+### 2. Configuration Setup
+Sentinel Hub configuration is set up using `SHConfig`, where the user inputs their client ID and secret. This configuration is necessary for authenticating and making requests to the Sentinel Hub API.
+
+### 3. Defining the Area of Interest (AOI)
+The AOI is defined using GeoJSON format and read into a GeoDataFrame. This specifies the geographic region for which satellite data will be requested.
+
+### 4. Geometry Conversion
+The AOI is converted to a specific coordinate reference system (CRS) and stored as a Geometry object. This ensures the geographic data is in the correct format for further processing.
+
+### 5. Evalscripts for Data Processing
+Two evalscripts are defined:
+- **Fire Detection Evalscript**: Processes Sentinel-3 data to detect active fire points.
+- **Wildfire Visualization Evalscript**: Processes Sentinel-2 data to visualize wildfires, enhance natural colors, and optionally show burn scars and water highlights.
+
+### 6. Creating and Executing Requests
+Requests are created using the `SentinelHubRequest` class, specifying the evalscripts, input data parameters, response format, geometry, and configuration. The requests are executed to retrieve the processed satellite imagery data.
+
+### 7. Data Visualization
+The retrieved images are visualized using a custom plotting function. This function scales and clips the image values for better visualization.
+
+## Example of a Key Code Block
+
+Here’s an example of a key code block that sets up and executes a request for wildfire visualization:
+
+```python
+# Create a SentinelHubRequest object for wildfire visualization using the wildfire visualization evalscript
+request_wildfire_visualisation = SentinelHubRequest(
+    evalscript=evalscript_wildfire_visualisation,
+    input_data=[
+        SentinelHubRequest.input_data(
+            data_collection=DataCollection.SENTINEL2_L2A.define_from(
+                name="s2",
+                service_url="https://sh.dataspace.copernicus.eu"
+            ),
+            time_interval=("2021-07-31", "2021-08-31"),
+            other_args={"dataFilter": {"mosaickingOrder": "leastRecent"}},
+        )
+    ],
+    responses=[SentinelHubRequest.output_response("default", MimeType.PNG)],
+    geometry=full_geometry,
+    size=[1000, 920],
+    config=config,
+)
+
+# Execute the request to retrieve the wildfire visualization images
+imgs = request_wildfire_visualisation.get_data()
+```
 ### First step approach
 - Google Orbit Hearth
 - Wildfire dataset
