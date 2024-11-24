@@ -27,7 +27,7 @@ Moreover, a significant challenge lies in the reliance on single-source connecti
 
 Our proposed solution harnesses the capabilities of unmanned aerial vehicles (UAVs) and mid-sized drones combined with geospatial intelligence to bridge this gap. By implementing a self-sustainable networking solution among drone fleets, we aim to overcome communication challenges and enhance the effectiveness of wildfire monitoring and response efforts across Europe.
 
-
+<br /><br />
 ## Key Components
 
 ### 1. Configuration Setup
